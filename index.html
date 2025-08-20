@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Day 6 — Car Directory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .controls {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 10px;
+      text-align: center;
+    }
+    .card img {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .card button {
+      background-color: #dc3545;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
+  <main class="container">
+    <h1>Day 6 — Car Directory</h1>
 
-  <!-- React & ReactDOM CDN -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <div class="controls">
+      <button id="create-card-btn">Create Card</button>
+    </div>
 
-  <!-- Main React App -->
-  <script type="text/babel" src="main.js"></script>
+    <div id="cards-container" class="cards-container" aria-live="polite"></div>
+  </main>
+
+  <script type="module" src="main.js"></script>
 </body>
 </html>
