@@ -23,17 +23,17 @@ function CarDirectory() {
     {
       brand: "Porsche",
       model: "Panamera",
-      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/porsche-panamera.jpg"
+      image: "https://www.carwale.com/porsche-cars/panamera/images/panamera-front-view-164358.jpg"
     },
     {
       brand: "Tesla",
       model: "Model S",
-      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/tesla-model-s.jpg"
+      image: "" // Add Tesla image URL here later
     },
     {
       brand: "BMW",
       model: "X5",
-      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/bmw-x5.jpg"
+      image: "" // Add BMW image URL here later
     }
   ]);
 
@@ -102,6 +102,3 @@ function CarDirectory() {
 // Render the App
 ReactDOM.createRoot(document.getElementById("root")).render(<CarDirectory />);
 
-      
-      
-         
