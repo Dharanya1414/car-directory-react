@@ -7,7 +7,7 @@ function CarCard({ brand, model, image, onDelete }) {
       borderRadius: "8px",
       padding: "10px",
       margin: "10px",
-      width: "200px",
+      width: "220px",
       textAlign: "center"
     }}>
       <img src={image} alt={brand} style={{ width: "100%", borderRadius: "5px" }} />
@@ -19,7 +19,24 @@ function CarCard({ brand, model, image, onDelete }) {
 }
 
 function CarDirectory() {
-  const [cars, setCars] = useState([]);
+  const [cars, setCars] = useState([
+    {
+      brand: "Porsche",
+      model: "Panamera",
+      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/porsche-panamera.jpg"
+    },
+    {
+      brand: "Tesla",
+      model: "Model S",
+      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/tesla-model-s.jpg"
+    },
+    {
+      brand: "BMW",
+      model: "X5",
+      image: "https://raw.githubusercontent.com/your-username/day6-car-directory/main/bmw-x5.jpg"
+    }
+  ]);
+
   const [brand, setBrand] = useState("");
   const [model, setModel] = useState("");
   const [image, setImage] = useState("");
@@ -82,5 +99,9 @@ function CarDirectory() {
   );
 }
 
-// Render React App
+// Render the App
 ReactDOM.createRoot(document.getElementById("root")).render(<CarDirectory />);
+
+      
+      
+         
